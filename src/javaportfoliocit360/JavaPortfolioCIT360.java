@@ -16,6 +16,7 @@ public class JavaPortfolioCIT360 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("This is my practice program!"); 
     }
     
 }
