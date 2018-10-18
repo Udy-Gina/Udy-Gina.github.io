@@ -11,8 +11,8 @@
   </head>
   <body>
     <header>
-        <p><img src="images/Optimized-family.png" width="200" height="250" alt="My Profile Picture"></p>
-        <h1>Jason Quibilan</h1>
+        <p><img src="alt="My Profile Picture"></p>
+        <h1>Gina Udy</h1>
     </header>
     <nav>
         <!-- insert main menu here -->
