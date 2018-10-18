@@ -1,14 +1,56 @@
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new `gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.
-
-### Designer Templates
-We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.
-
-### Creating pages manually
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
-
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
-
-### Support or Contact
-Having trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title> Gina Udy - BYU-I Online Course Portfolio</title>
+    <meta name="description" content="BYU-I Online Course Portfolio page for Gina Udy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/modernizr-custom.js"></script>
+  </head>
+  <body>
+    <header>
+        <p><img src="images/Optimized-family.png" width="200" height="250" alt="My Profile Picture"></p>
+        <h1>Jason Quibilan</h1>
+    </header>
+    <nav>
+        <!-- insert main menu here -->
+    </nav>
+    <main>
+        <h2>CIT 360 - Assignment Portal</h2>
+            <ul>
+                <li>[Fluency Review #1]</li>
+                <li>Java Collections: <a href="src/cit/pkg360/ArrayListDemo.java">ArrayList</a></li>
+                <li>Java Collections: <a href="src/cit/pkg360/LinkedListDemo.java">LinkedList</a></li>
+                <li>Java Collections: <a href="src/cit/pkg360/TreeSetDemo.java">TreeSet</a>, <a href="src/cit/pkg360/Employee.java">Employee</a></li>
+                <li>Threads, Executors, Runnables: <a href="src/cit/pkg360/ThreadDemo.java">Thread</a>, <a href="src/cit/pkg360/Apple.java">Apple</a></li>
+                <li>[Fluency Review #2]</li>
+                <li>Threads, Executors, Runnables: <a href="JavaDownloader/src/javadownloader/Main.java">Java Downloader</a>, <a href="OregonTrail.java">Text based Oregon Trail game</a></li>
+                <li>JUnit Testing: <a href="JUnit/test/junit/CalculatorTest.java">Calculator Test</a></li>
+                <li>HTTPURLConnection from Android: <a href="https://github.com/Quibilan-Jason/WeatherApp2.git">Weather App</a></li>
+                <li>MVC & ACP: <a href="OregonTrail.java">Text Based Oregon Trail game</a></li>
+                <!--<li>[More New Stuff]</li>
+                <li>Hibernate: <a href="Hibernate/src/crud/Create.java">Create</a>,
+                               <a href="Hibernate/src/crud/Read.java">Read</a>,
+                               <a href="Hibernate/src/crud/Update.java">Update</a>,
+                               <a href="Hibernate/src/crud/Delete.java">Delete</a></li>
+                <li>Servlets: <a href="Servlet/src/infoProcess.java">Registration Form</a></li>
+                
+                <li>QCJSON & JSON: <a href="JSON/src/json/jsonDemo.java">JSON demo</a></li>
+                <li>[Week 10 Stuff]</li>
+                <li>Use Case: <a href="Use Case/Use case diagrams.pptx">Use Case Diagram PowerPoint</a>,
+                              <a href="Use Case/use case document.docx">Use Case Document</a>,
+                              <a href="Use Case/State Diagrams.docx">State Diagrams</a>,
+                              <a href="Use Case/System Level Tests.docx">System Level Tests</a>,
+                              <a href="Use Case/Sequence Diagrams.docx">Sequence Diagrams</a></li>
+                <li>Threads, Executors, Runnables: <a href="Threads, Executors, Runnables/src/demo/TREhandlers.java">Thread Pool demo</a></li>
+                <li>Application Controller Pattern: <a href="Application Controller Pattern/src/simpleMathDemo/runACP.java">Simple Math demo</a></li>
+                <li>HTTPURLConnection: <a href="HttpURLConnection/src/demo/websearch.java">HTTPURLConnection demo</a></li>
+           </ul>-->
+    </main>
+    <footer>
+        <p>@ 2018 - Jason Quibilan - Location: Arizona - <a href="http://www.byui.edu/online">BYU-I Online Learning</a></p>
+    </footer>
+  </body>
+</html>
