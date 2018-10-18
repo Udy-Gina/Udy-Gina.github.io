@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaportfoliocit360;
+package javaportfoliocit360.QCJSONandJSON;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -17,7 +17,7 @@ import org.json.simple.parser.ParseException;
 public class JSONPracticeParse {
  
     public static void main(String[] args) {
-        String jsonString = "{\"firstName\":\"Gina\",\"lastName\":\"Udy\",\"email\":\"gina@email.com\",\"age\":\"44\"}";
+        String jsonString = "{\"firstName\":\"Gina\",\"lastName\":\"Udy\",\"email\":\"gina@email.com\",\"age\":\"44\",\"town\":\"Eliot\",\"state\":\"Maine\",\"favoriteFood\":\"pizza\",\"favoriteDessert\":\"cheesecake\",\"favoriteSeason\":\"summer\",\"favoriteColor\":\"pink\",\"favoritePerson\":\"Joel Udy\",\"Zip\":\"03903\",\"favoritePet\":\"houseplants\",\"favoriteHolida\":\"Christmas\"}";
         JSONParser parser = new JSONParser();
         JSONObject obj;
         try {
@@ -32,6 +32,10 @@ public class JSONPracticeParse {
             System.out.println();
             System.out.println();
             System.out.println((obj.get("firstName"))+("'s last name is ")+((obj.get("lastName"))+(".")));
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println((obj.get("firstName"))+("'s favorite 'pets' are ")+((obj.get("favoritePet"))+(".")));
             System.out.println();
             System.out.println();
             System.out.println();

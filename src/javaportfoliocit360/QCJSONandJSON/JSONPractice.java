@@ -3,10 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaportfoliocit360;
+package javaportfoliocit360.QCJSONandJSON;
 
-import java.io.IOException;
-import java.io.StringWriter;
 import org.json.simple.JSONObject;
 
 /**
@@ -14,7 +12,7 @@ import org.json.simple.JSONObject;
  * @author Gina Udy
  */
 
-class JsonEncodeDemo1 {
+class JSONPractice {
 
    public static void main(String[] args){
       JSONObject obj1 = new JSONObject();
