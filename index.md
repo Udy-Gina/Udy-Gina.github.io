@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title> Gina Udy - BYU-I Online Course Portfolio</title>
+    <title>Gina Udy - BYU-I Online Course Portfolio</title>
     <meta name="description" content="BYU-I Online Course Portfolio page for Gina Udy">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -11,7 +11,6 @@
   </head>
   <body>
     <header>
-        <p><img src="alt="My Profile Picture"></p>
         <h1>Gina Udy</h1>
     </header>
     <nav>
