@@ -5,10 +5,12 @@
  */
 package javaportfoliocit360.Servlets;
 
+import javaportfoliocit360.JavaCollections.*;
+
 /**
  *
  * @author Gina Udy
  */
-public class Servlets {
+public class JavaCollections {
     
 }
