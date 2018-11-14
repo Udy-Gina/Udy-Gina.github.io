@@ -5,26 +5,22 @@
  */
 package javaportfoliocit360;
 
-import java.io.File;
-import java.io.PrintWriter;
-import java.util.Scanner;
-
 /**
  *
  * @author Gina Udy
  */
 public class JavaPortfolioCIT360 {
     
-    //public static void main(String[] args) {
+    public static void main(String[] args) {
         // TODO code application logic here
-      //  System.out.println("This is my Java Collections demo:"); 
-    //}
+        System.out.println("This is my CIT360 Portfolio."); 
+    }
  
     //public class FirstFunction {
 
-    public static int multiply(int firstNum, int secondNum){
-        return firstNum * secondNum;
-    }	
+    //public static int multiply(int firstNum, int secondNum){
+      //  return firstNum * secondNum;
+    //}	
 
     
     /* MULTIPLY EXAMPLE
@@ -64,7 +60,7 @@ public class JavaPortfolioCIT360 {
     
 
     /* RETRIEVING DATA EXAMPLE */
-    public static void main(String[] args) throws Exception{
+    /* public static void main(String[] args) throws Exception{
         File userDataFile = new File("user.data");
         Scanner fileScanner = new Scanner(userDataFile);
         int firstNumber = JavaPortfolioCIT360.readNumber(fileScanner);
@@ -72,10 +68,14 @@ public class JavaPortfolioCIT360 {
         System.out.printf("%d * %d = %d\n",firstNumber,secondNumber,firstNumber * secondNumber);
         System.out.printf("%d + %d = %d\n",firstNumber,secondNumber,firstNumber + secondNumber);
         System.out.printf("%d - %d = %d\n",firstNumber,secondNumber,firstNumber - secondNumber);
-    }
+    } */
 
-    public static int readNumber(Scanner fileScanner) throws Exception{
+    /* public static int readNumber(Scanner fileScanner) throws Exception{
         int aNumber = fileScanner.nextInt();
         return aNumber;
+    } */
+
+    public static int multiply(int firstInt, int secondInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
