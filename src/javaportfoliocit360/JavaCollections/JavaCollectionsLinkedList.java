@@ -5,9 +5,7 @@
  */
 package javaportfoliocit360.JavaCollections;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.LinkedList;
 import java.util.ListIterator;
 
 /**
@@ -20,7 +18,7 @@ public class JavaCollectionsLinkedList {
         // TODO code application logic here
         System.out.println();
         System.out.println("***************************************************");
-        System.out.println("*  This is my Java Collections LINKED LIST demo   *");
+        System.out.println("*   This is my Java Collections LinkedList demo   *");
         System.out.println("***************************************************");
         System.out.println();
         buildLinkedList();
@@ -28,47 +26,83 @@ public class JavaCollectionsLinkedList {
 
         
     public static void buildLinkedList() {
-        // Assign colors to array 
-        String[] colors = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"};
-        List<String> rainbow = new ArrayList<>();
-                
-        // Add array items to the ArrayList
-        rainbow.addAll(Arrays.asList(colors));
         
-        // Assign colors to array 
-        String[] colorList = {"black", "gray", "white", "magenta", "aqua", "rose", "teal", "peach", "pink", "sage", "azure", "lavender"};
-        List<String> moreColors = new ArrayList<>();
+        // Creating object of class linked list 
+    LinkedList<String> colors4 = new LinkedList<>();
+  
+        // Elements are added using add() method 
+        colors4.add("red");
+        colors4.add("orange");
+        colors4.add("yellow");
+        colors4.add("green");
+        colors4.add("blue");
+        colors4.add(2, "indigo");
+        colors4.add("violet");
+        colors4.add("black");
+        colors4.add("white");
+        colors4.add("pink");
+        colors4.add("burnt sienna");
+        colors4.add("brown umber");
+        colors4.add("magenta");
+        colors4.add("peach");
+        colors4.add("aqua");
         
-        // Add array items to the ArrayList
-        moreColors.addAll(Arrays.asList(colorList));
+        // Create an Iterator over the LinkedList
+        ListIterator i = colors4.listIterator(); 
+  
+        // Print out LinkedList
+        System.out.println("The LinkedList is: "); 
+        while(i.hasNext()) { 
+           System.out.println(i.next()); 
+        } 
+        System.out.println(); 
         
-        // Combine both lists 
-        rainbow.addAll(moreColors);
+        // Removing elements from the LinkedList 
+        colors4.remove("magenta"); 
+        colors4.remove(5); 
+        colors4.removeFirst(); 
+        colors4.removeLast(); 
         
-        //create methods
-        printList(rainbow);
-        removeColors(rainbow, 2,7);
-        printList(rainbow);
-        reverseList(rainbow);
-    }
+        // Create an Iterator over the LinkedList
+        ListIterator x = colors4.listIterator(); 
         
-    //printMe method
-    private static void printList(List<String> l) {
-        for(String temp : l)
-            System.out.printf("%s ", temp);
-            System.out.println();
-    }
-
-    //removeStuff method
-    private static void removeColors(List<String> l, int from, int to) {
-        l.subList(from, to).clear();
-    }
-
-    //reverseMe method
-    private static void reverseList(List<String> l) {
-        ListIterator<String> it = l.listIterator(l.size());
-        while(it.hasPrevious())
-            System.out.printf("%s ", it.previous());
-            System.out.println();
+        // Print out updated LinkedList
+        System.out.println("The LinkedList after the deletions is: "); 
+        while(x.hasNext()) { 
+           System.out.println(x.next()); 
+        }
+        System.out.println();
+                 
+        // Finding elements in the LinkedList 
+        boolean status = colors4.contains("magenta"); 
+  
+        if(status) 
+            System.out.println("List contains the color 'magenta'."); 
+        else
+            System.out.println("List doesn't contain the element 'magenta'."); 
+  
+        // Number of elements in the LinkedList 
+        System.out.println();
+        int size = colors4.size(); 
+        System.out.println("The size of the LinkedList is: " + size); 
+        System.out.println();
+  
+        // Get and set elements from the LinkedList 
+        Object element = colors4.get(2); 
+        System.out.println("Element returned by get(): " + element); 
+        System.out.println();
+        
+        // Change index #2 to read 'CHANGED INDEX'
+        colors4.set(2, "CHANGED INDEX"); 
+        
+        // Create an Iterator over the LinkedList
+        ListIterator y = colors4.listIterator(); 
+        
+        // Print out updated LinkedList
+        System.out.println("The LinkedList after the change is: "); 
+        while(y.hasNext()) { 
+           System.out.println(y.next()); 
+        }
+        System.out.println();
     }
 }
