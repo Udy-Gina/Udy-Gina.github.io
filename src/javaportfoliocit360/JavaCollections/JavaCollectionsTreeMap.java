@@ -16,14 +16,10 @@ public class JavaCollectionsTreeMap {
         System.out.println();
         System.out.println();
         buildTreeMap();
-    }
-    
+    }    
         
     public static void buildTreeMap() {
-        System.out.println();
-        System.out.println();
-        System.out.println("TreeMap:");
-        System.out.println("--------");
+        
     }
     
 }
