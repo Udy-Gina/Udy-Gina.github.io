@@ -15,13 +15,6 @@ public class JavaCollectionsArrayList {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println();
-        System.out.println("***************************************************");
-        System.out.println("*   This is my Java Collections ArrayList demo    *");
-        System.out.println("***************************************************");
-        System.out.println();
-        System.out.println();
-        System.out.println();
         buildArrayList();
     }
 

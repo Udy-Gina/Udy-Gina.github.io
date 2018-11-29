@@ -14,7 +14,7 @@ import org.json.simple.JSONObject;
  * @author Gina Udy
  */
 
-class JsonEncodeDemo2 {
+public class JSONPracticeString {
 
    public static void main(String[] args) throws IOException{
       JSONObject obj2 = new JSONObject();

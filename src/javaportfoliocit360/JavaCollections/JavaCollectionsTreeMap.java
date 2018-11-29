@@ -24,45 +24,45 @@ public class JavaCollectionsTreeMap {
     }    
         
     public static void buildTreeMap() {
-        TreeMap<Integer, String> zodiac = new TreeMap<>(); 
+        TreeMap<Float, String> heatScores = new TreeMap<>(); 
         
         // Nothing has been "put" into TreeMap yet 
-        print(zodiac); 
+        print(heatScores); 
         
         System.out.println();
         
         // Fill TreeMap with key/value pairs 
-        zodiac.put(1, "Aries: The zodioc mastcot for Aries is a ram.  Some people confuse that with a sheep or goat, but rams are way cooler.  They are the Princess Leias of the animal kingdom.  It's a fact...they have the cinnamon bun horns to prove it."); 
-        zodiac.put(2, "Taurus: Taurus means 'bull', but this horiscope is no bull.  You are a person who sometimes has many thoughts.  Something will happen to you today...could be big, could be small.  You'll just have to wait and see.  Of course, if nothing happens, it might happen tomorrow instead.  Again, you'll just have to wait and see."); 
-        zodiac.put(3, "Gemini: Even though Gemini means 'twins' you are probably not one.  You could be, but probably aren't.  After all, most people aren't."); 
-        zodiac.put(4, "Cancer: Your zodiac mascot is a crab.  The best advice anyone could give you is to NOT be a Cancer.  Nobody likes crabby people."); 
-        zodiac.put(5, "Leo: It's possible you are as brave as a lion, but who can say for sure?  Being born in summer makes you a summer birthday, so you know all about disapointment (having never had a birthday party with school friends and all...assuming you had friends).  It can only go up from here...unless you lose your cell phone, of course.  That would certainly be a downer."); 
-        zodiac.put(6, "Virgo: Virgos are supposed to be self-suffiencient, so why are you relying on a horoscope?"); 
-        zodiac.put(7, "Libra: It's possible 'Nacho Libre' is your favorite movie.  Oh wait...you're a Libra, not a Libre.  Nevermind."); 
-        zodiac.put(8, "Scorpio: Halloween falls within the timeframe of Scorpio.  That's so cool - maybe you could dress up as a scorpion this year...give those vampires a run for their money!"); 
-        zodiac.put(9, "Sagittarius: Belonging to the coolest sounding astrological sign with the coolest mascot (hello, centaur!?) just might make you the coolest person around.  Of course, in reality the mascot is a satyr, which is infinitely less cool.  It's possible you are just mediocre.  Who can say, really."); 
-        zodiac.put(10, "Capricorn: You just may have the lamest zodiac mascot there is, which means you will have to work extra hard to make something of yourself.  Kind of like how goats work really hard at eating everything in their path.  Be tenacious like that."); 
-        zodiac.put(11, "Aquarius: Having one of the worst songs in history named after your astrological sign can only mean good things for you from here on out, Aquarius.  But just to be on the safe side, you should stay away from poisonous snakes, spiders, and insects.  Also crocodiles.  And bears.  And serial killers."); 
-        zodiac.put(12, "Pisces: Sorry, Pisces...you get no horoscope.  You were at the bottom of the list, and there are no more predictions left for you.  There is, however, one piece of good advice.  Avoid getting hit by a bus.  Those are words to live by."); 
-        zodiac.put(13, "Nothing: Please check your numbers and try again...otherwise, this is your horoscope.");
+        heatScores.put(1.2f, "John"); 
+        heatScores.put(2.0f, "Frank"); 
+        heatScores.put(2.3f, "William"); 
+        heatScores.put(2.1f, "Jim"); 
+        heatScores.put(1.1f, "Joey"); 
+        heatScores.put(1.5f, "Jeff"); 
+        heatScores.put(1.9f, "Sam"); 
+        heatScores.put(2.9f, "Joel"); 
+        heatScores.put(3.2f, "Rick"); 
+        heatScores.put(3.9f, "Mike"); 
+        heatScores.put(4.0f, "Ben"); 
+        heatScores.put(3.3f, "Marty"); 
+        heatScores.put(1.0f, "Hank"); 
           
         // Print the number of entries in the TreeMap
-        System.out.println("There are " + zodiac.size() + " entries in the TreeMap."); 
+        System.out.println("There are " + heatScores.size() + " entries in the TreeMap."); 
         System.out.println();
       
         // Find a specific key/value pair in the TreeMap
-        if (zodiac.containsKey(6))  
+        if (heatScores.containsKey(2.0f))  
         { 
-            String a = zodiac.get(6); 
-            System.out.println("The value for key \"6\" is: " + a); 
+            String a = heatScores.get(2.0f); 
+            System.out.println("The value for key \"2.0\" is: " + a); 
         } 
                
         // Print the entire list of TreeMap entries using an iterator 
         System.out.println();
         System.out.println();
-        Set set = zodiac.entrySet();
+        Set set = heatScores.entrySet();
         Iterator iterator = set.iterator();
-        System.out.println("The signs of the zodiac with their corresponding horoscopes are: ");
+        System.out.println("The times of all race participants are: ");
         System.out.println();
         while(iterator.hasNext()) {
             Map.Entry mentry = (Map.Entry)iterator.next();
@@ -72,32 +72,34 @@ public class JavaCollectionsTreeMap {
         System.out.println();
         
         // Use lastKey() and firstKey() utilities 
-        System.out.println("The lastKey in the zodiac TreeMap is: " + zodiac.lastKey());
-        System.out.println("The firstKey in the zodiac TreeMap is: " + zodiac.firstKey());
+        System.out.println("The highest race time is: " + heatScores.lastKey());
+        System.out.println("The lowest race time is: " + heatScores.firstKey());
+        System.out.println("The person who took last place is: " + heatScores.lastEntry());
+        System.out.println("The winner of the race is: " + heatScores.firstEntry());
         
         System.out.println();
         
         // Clear the TreeMap
-        zodiac.clear(); 
+        heatScores.clear(); 
         
         // Print the empty TreeMap 
-        print(zodiac); 
+        print(heatScores); 
         System.out.println();
         
         
         
     }
     
-    public static void print(Map<Integer, String> zodiac)  
+    public static void print(Map<Float, String> heatScores)  
     { 
-        if (zodiac.isEmpty())  
+        if (heatScores.isEmpty())  
         { 
             System.out.println("The TreeMap is empty."); 
         } 
           
         else
         { 
-            System.out.println(zodiac); 
+            System.out.println(heatScores); 
         } 
     } 
 }
