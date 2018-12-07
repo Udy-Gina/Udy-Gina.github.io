@@ -1,0 +1,8 @@
+title: Udy-gina.GitHub.io
+description: BYU-I online course portfolio
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
