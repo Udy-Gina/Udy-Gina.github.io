@@ -1,8 +1,8 @@
 package javaportfoliocit360.MVC.View;
 
 import java.util.Scanner;
+import javaportfoliocit360.MVC.Controller.StudentController;
 import javaportfoliocit360.MVC.Model.Student;
-import static javaportfoliocit360.MVC.View.StudentView.newStudent;
 
 /**
  *
@@ -11,41 +11,41 @@ import static javaportfoliocit360.MVC.View.StudentView.newStudent;
 
 public class StudentView {
     
-    public void displayStudentView() throws Exception {
+    public void StudentView() throws Exception {
         
-        Student newStudent = newStudent();
-        System.out.println(newStudent);
+        // Create new instance of Student 
+        Student studentData = new Student();
         
-        //StudentController.saveStudent(); 
+        // Send new Student to newStudent() for input from user 
+        newStudent(studentData);
         
-        //displayStudents();
+        // Send input from user to the controller to be saved in a file  
+        StudentController.saveStudent(studentData);
     }
 
-    // Input new student name and ID number 
-    public static Student newStudent() throws Exception {
+    public static Student newStudent(Student studentData) throws Exception {
+        
+        // Add scanner 
         Scanner systemInScanner = new Scanner(System.in);
-        System.out.printf("Enter the student's first name:\n");
-        String firstName = systemInScanner.nextLine();
-        System.out.printf("Enter %s's last name:\n", firstName);
-        String lastName = systemInScanner.nextLine();
-        System.out.printf("Enter %s's student 5-digit ID number:\n", firstName);
-        int idNo = systemInScanner.nextInt();
-
-        Student aStudent = new Student();
-        aStudent.setFirstName(firstName);
-        aStudent.setLastName(lastName);
-        aStudent.setIdNo(idNo);
         
-        return aStudent;
+        // Get first name
+        System.out.printf("Enter the student's first name:\n");
+        String first = systemInScanner.nextLine();
+            
+        // Get last name 
+        System.out.printf("Enter %s's last name:\n", first);
+        String last = systemInScanner.nextLine();
+        
+        // Get id#
+        System.out.printf("Enter %s's student 5-digit ID number:\n", first);
+        long id = systemInScanner.nextLong();
+
+        // Set student data 
+        studentData.setFirstName(first);
+        studentData.setLastName(last);
+        studentData.setIdNo(id);
+        
+        // Return student data to view 
+        return studentData;
     }
-    
-    /* public static void displayStudents() {
-        System.out.printf("\nIt works!\n");
-    } */
-}
-
-
-
-//  NEED TO STORE STUDENT NAMES SOMEWHERE...SAVE TO FILE?  LATER, IT WILL SAVE TO DATASE (HIBERNATE)
-
-    
+}    

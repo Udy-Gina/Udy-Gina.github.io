@@ -4,7 +4,7 @@ public class Student {
    
     public String firstName;
     public String lastName;
-    public int idNo;
+    public long idNo;
 
     public Student() {
     }
@@ -25,11 +25,11 @@ public class Student {
        this.lastName = lastName;
     }
 
-    public int getIdNo() {
+    public long getIdNo() {
        return idNo;
     }
 
-    public void setIdNo(int idNo) {
+    public void setIdNo(long idNo) {
        this.idNo = idNo;
     }
 

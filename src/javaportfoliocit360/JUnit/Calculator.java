@@ -5,26 +5,35 @@
  */
 package javaportfoliocit360.JUnit;
 
+import java.math.BigInteger;
+import java.util.Scanner;
+
 /**
  *
  * @author Gina Udy
  */
 class Calculator {
 
-    static Object add(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public static void main(String[] args) {
+        addNumbers();
     }
+        
+    public static void addNumbers() {    
+        String number1, number2;
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Enter first whole number:");
+        number1 = in.nextLine();
 
-    static Object sub(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        System.out.println("Enter second whole number");
+        number2 = in.nextLine();
 
-    static Object mul(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        BigInteger first  = new BigInteger(number1);
+        BigInteger second = new BigInteger(number2);
+        BigInteger sum;
 
-    static Object div(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+        sum = first.add(second);
+
+        System.out.println(first + " + " + second + " = " + sum);
+  }
 }

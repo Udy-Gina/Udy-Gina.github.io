@@ -1,5 +1,7 @@
 package javaportfoliocit360.MVC.Controller;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import javaportfoliocit360.MVC.Model.Student;
 import javaportfoliocit360.MVC.View.StudentView;
 
@@ -34,39 +36,29 @@ public class StudentController {
        return model.getLastName();		
     }
 
-    public void setStudentIdNo(int idNo){
+    public void setStudentIdNo(long idNo){
        model.setIdNo(idNo);		
     }
 
-    public int getStudentIdNo(){
+    public long getStudentIdNo(){
        return model.getIdNo();		
     }
 
-    /*public static void saveStudent() throws Exception {
+    /**
+     *
+     * @param studentData
+     */
+    public static void saveStudent(Student studentData) {
+        System.out.println(studentData);
+    }
+    
+    // UPDATE THIS SO IT SAVES THE NEW STUDENT DATA TO A FILE AND PRINTS FULL LIST TO VIEW 
+    
+    /* public static void saveStudent(Student newStudent) throws Exception {
         FileWriter studentFile = new FileWriter("student.data");
         try (PrintWriter studentWriter = new PrintWriter(studentFile)) {
             //Student studentData = newStudent;
             //studentWriter.printf(newStudent.firstName, newStudent.lastName, newStudent.idNo);
         }
-    }*/
-    
-  /*  
-     public static void studentArrayList() {
-        
-        // Assign Student ArrayList 
-        List<Student> aStudent = new ArrayList<>();
-        
-        // Add array items to the ArrayList
-        aStudent.addAll(Arrays.asList(colorList1));
-                
-        // Print out original list items 
-        System.out.println("A list of colors: ");
-        for(int i =0; i<colors1.size(); i++) {
-            System.out.printf("%s ", colors1.get(i));
-            System.out.println();
-    
-    
-    
-    */
-    
+    } */
 }

@@ -23,7 +23,6 @@ public class MVCPatternDemo {
         StudentView studentView = null; 
         
         studentView = new StudentView();
-        studentView.displayStudentView();
-
+        studentView.StudentView();
     }
 }

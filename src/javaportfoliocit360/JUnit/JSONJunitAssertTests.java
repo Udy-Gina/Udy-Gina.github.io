@@ -31,7 +31,7 @@ public class JSONJunitAssertTests {
         String[] expectedOutput = {"apple", "mango", "grape"};
         //assume that the below array is returned from the method 
         //to be tested.
-        String[] methodOutput = {"apple", "mango", "grape"};
+        String[] methodOutput = {"apple", "pineapple", "grape"};
         assertArrayEquals(expectedOutput, methodOutput);
     }
 }
