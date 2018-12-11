@@ -4,10 +4,11 @@ package javaportfoliocit360.JUnit;
  *
  * @author Gina Udy
  */
-public class JUnitTest {
+
+public class JUnitAssertNull {
     
-    public int add(String s1, String s2) {
+    // Testing AssertNull 
+    public int assertNullTest() {
         return 0;
     }
-    
 }
