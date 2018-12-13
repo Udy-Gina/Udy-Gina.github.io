@@ -7,7 +7,7 @@ import java.io.IOException;
 
 /**
  *
- * @author dmitriysinitsyn
+ * @author Gina Udy
  */
 
 public class HttpURLConnection {
